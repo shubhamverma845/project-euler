@@ -2,11 +2,14 @@
 
 class problem1{
 
-	static int limit = 1000;
+	static int limit = 999;
 
 	static int sumDivisibleBy(int n){
 
 		int sum = 0;
+		int p = limit/n;
+
+		// System.out.println(p);
 
 		for(int i = n; i < limit; i++){
 			if(i%n == 0){
@@ -14,7 +17,7 @@ class problem1{
 			}
 		}
 
-		return sum;
+		return (p*(p+1)*n)/2;
 	}
 
 	public static void main(String[] args) {
