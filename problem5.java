@@ -2,15 +2,15 @@
 
 class problem5{
 
-	static long gcd1(long a, long b) 
+	static long gcd(long a, long b) 
     { 
       if (b == 0) 
         return a; 
-      return gcd1(b, a % b);  
+      return gcd(b, a % b);  
     } 
 
 	static long lcm(long a, long b){
-		return (a*b)/gcd1(a,b);
+		return (a*b)/gcd(a,b);
 	}
 
 	public static void main(String[] args) {
