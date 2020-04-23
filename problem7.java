@@ -1,4 +1,4 @@
-//
+//10001st prime
 
 import java.lang.Math;
 
