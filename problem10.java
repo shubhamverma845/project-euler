@@ -49,7 +49,7 @@ class problem10{
 
 		long sum = 0;
 
-		for(int i = 2; i < 2000000; i++){
+		for(int i = 2; i < 1999994; i++){
 
 			if(isPrime(i)){
 				sum += i;
