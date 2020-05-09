@@ -1,2 +1,4 @@
-# Project Euler
-This repository will contain the code for the project euler problems.
+# Project Euler Solutions
+This repository will contain the solutions for the project euler problems.
+All the problems are solved in JAVA.
+Hope this repo helps you!!
