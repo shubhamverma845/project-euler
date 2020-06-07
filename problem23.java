@@ -1,7 +1,6 @@
 //Non-abundant Sums
 import java.util.ArrayList;
 
-
 class problem23{
 
 	static ArrayList<Integer> list = new ArrayList<Integer>();
@@ -54,10 +53,7 @@ class problem23{
 
 	public static void main(String[] args) {
 
-		long start = System.nanoTime();
-
 		int sum = 0;
-
 		
 		for(int i = 12; i <= 20161; i++){
 			if(isAbundant(i)){
@@ -74,9 +70,6 @@ class problem23{
 			
 		}
 
-		
 		System.out.println(sum);
-		long time = System.nanoTime() - start;
-		System.out.println(time);
 	}
 }
