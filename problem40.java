@@ -2,12 +2,13 @@
 
 class problem40{
 	public static void main(String[] args) {
-		String num = "";
+
 		int i = 1;
+
+		StringBuilder num = new StringBuilder("");
 		while(num.length() < 1000000){
-			num += String.valueOf(i);
+			num.append(String.valueOf(i));
 			i++;
-			//System.out.println(i);
 		}
 		
 		int d1 = Character.getNumericValue(num.charAt(0));
@@ -19,6 +20,7 @@ class problem40{
 		int d1000000 = Character.getNumericValue(num.charAt(999999));
 
 		int prod = d1*d10*d100*d1000*d10000*d100000*d1000000;
+
 
 		System.out.println(prod);
 	}
