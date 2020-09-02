@@ -26,19 +26,16 @@ class problem36{
 	public static boolean isPalindrome(String num){
 		StringBuilder numRev = new StringBuilder(num);
 		numRev.reverse();
+		String s = numRev.toString();
 
-		if(num.equals(numRev.toString())){
-			return true;
-		}
-
-		return false;
+		return num.equals(s);
 	}
 	
 	public static void main(String[] args) {
 
 		int sum = 0;
 
-		for(int i = 0; i < 1000000; i++){
+		for(int i = 1; i < 1000000; i+=2){
 			if(isPalindrome(Integer.toString(i)) && toBase2(i)){
 				sum += i;
 			}
