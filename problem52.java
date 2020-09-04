@@ -38,8 +38,6 @@ class problem52{
 
 	public static void main(String[] args) {
 		
-		long start = System.nanoTime();
-
 		int n = 1;
 		int lim = 10;
 
@@ -57,8 +55,5 @@ class problem52{
 			n = n*10;
 			lim = lim*10;
 		}
-
-		long time = System.nanoTime() - start;
-		System.out.println(time);
 	}
 }
